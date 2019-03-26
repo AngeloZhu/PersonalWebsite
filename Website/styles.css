@@ -1,0 +1,247 @@
+:root {
+    --bibleId: 8%;
+    --uciId: 31%;
+    --volleyballId: 54%;
+    --bobaId: 77%;
+}
+
+h1 {
+    font-family: "Abril Fatface";
+    font-size: 4vw;
+    color: black;
+    }
+h2 {
+    font-family: "Abril Fatface";
+    font-size: 4vw;
+    color: black;
+    text-shadow: 0 0 5px white;
+}
+
+h3 {
+    font-family: "Courier";
+    font-size: 4vw;
+    color: skyblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 100;
+}
+
+li {
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 2vw;
+    display: inline-block;
+    margin-right: 0.8em;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+    color: white;
+}
+
+text {
+    color: white;
+}
+
+a {
+    display:inline-block;
+    padding: 8px;
+    background-color: "black";
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.whatAmIReally:hover {
+    text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}
+
+
+#whoAmIId {
+    display: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-family: "Sanchez";
+    line-height: 2em;
+}
+
+#bibleIdText {
+    display: none;
+}
+#volleyballIdText {
+    display: none;
+}
+#uciIdText {
+    display: none;
+}
+#bobaIdText {
+    display: none;
+} 
+.charText {
+    font-size: 20px;
+    font-family: "Sanchez";
+    font-weight: bold;
+    text-indent: 5em;
+    color: black;
+    margin-top: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-shadow: 0 0 5px white;
+    text-align: justify;
+}
+
+button {
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 65px;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+/*.galatiansQuote {
+    text-indent: 4em;
+    font-style: italic;
+    font-weight: bold;
+    color: #8aa5d1;
+    border-top: solid #6ba2f9;
+    border-top-width: 0.2em;
+
+}
+
+.g {
+    text-align: right;
+    font-style: italic; 
+    font-weight: bold;
+    color: #8aa5d1;
+    border-bottom: solid #6ba2f9;
+    border-bottom-width: 0.2em;
+} */
+
+.parallax {
+    background-image: url("img/night.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectImages {
+    width: 35vw;
+    height: 35vh;
+    border-radius: 15%;
+}
+
+.projectImages:hover {
+    opacity: 0.3;
+}
+
+li1 {
+    padding: 0px 0px 0px 50px;
+}
+
+li1:hover {
+    opacity: 0.5;   
+}
+
+ul2 {
+    white-space: nowrap;
+    list-style-type:none;
+    width: 100%;  
+}
+.char {
+    margin-top: 50px;
+}
+
+.attr {
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.attr:hover {
+    opacity: 0.7;
+}
+
+iframe {
+    height: 40vw; 
+    width: 40vw; 
+    display: inline-block;
+    margin-left: 5vw;
+    margin-right: 3vw;
+}
+
+.paragraphstyle {
+    margin-left: 5vw; 
+    margin-right: 5vw; 
+    margin-bottom: 3em; 
+    text-indent: 5em; 
+    font-size: 1.5vw;
+    font-family: "Sanchez";
+}
+
+.imgContainer {    
+    position: relative;
+    transition: 1s ease;
+}
+
+.seeCode  {
+    font-family: "Courier New";
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.imgContainer:hover .seeCode{
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.slideshow {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    display: none;
+}
+
+.gif {
+    display: none;
+    width: 30vw;
+    height: 30vw;
+}
+
+.gif:hover {
+    opacity: 0.3;
+}
+
+.meditations {
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    text-indent: 5em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}

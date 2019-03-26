@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sanchez' rel ='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+            
+        <title>Angelo Zhu</title>
+        <h1><center>Angelo Zhu</center></h1>
+       
+        <!--Menu-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home_missions.html">Home Missions 2018</a></li> 
+            <li><a href="uci_cs.html">UCI Computer Science</a></li>
+            <li style="right: 0%; position: absolute;">angelozhu15@gmail.com</li>
+        </ul>
+        <h2>Projects</h2>
+        <center><h3>2048</h3></center>
+        <p class="paragraphstyle">Using the pygame library for Python, I created a gui for the well-known number matching game called 2048. This game is split in three modules for game visuals, mechanics, and playing. The game mechanics include two classes - one for a number object with overridden attributes for easier implementation and another to initialize a 2048 game and include all its functions. The game visuals uses the pygame library to create a resizable surface to play the game and implements all the game mechanics within the visuals. The module used to play the game simply receives an inputted board size and creates a 2048 game object to play the game. </p>
+        
+        <center><a href="https://github.com/AngeloZhu/2048pygame"><div class="imgContainer"> 
+            
+            <img src="img/gif_img/one.png" style="display: block;" class="gif">
+            <img src="img/gif_img/two.png" class="gif">
+            <img src="img/gif_img/three.png" class="gif">
+            <img src="img/gif_img/four.png" class="gif">            
+            <img src="img/gif_img/five.png" class="gif">            
+            <img src="img/gif_img/six.png" class="gif">            
+            <img src="img/gif_img/seven.png" class="gif">
+            <img src="img/gif_img/eight.png" class="gif">            
+            <img src="img/gif_img/nine.png" class="gif">            
+            <img src="img/gif_img/ten.png" class="gif">            
+            <img src="img/gif_img/eleven.png" class="gif">            
+            <img src="img/gif_img/twelve.png" class="gif">            
+            <img src="img/gif_img/thirteen.png" class="gif">            
+            <img src="img/gif_img/fourteen.png" class="gif">
+            <div class="seeCode">See Code</div></div></a></center>
+        <center><h3>FitFriends</h3></center>
+        <p class="paragraphstyle">In the fall of 2018, I attended a 24hr hackathon at UCI. Here, my team created a web app called FitFriends that matches users as gym partners. Matching is based on categories like avaliability, type of exercise, gender, time, etc. Our team used GitKraken for version control and information distribution. In this project, I was a front end developer and created the various web pages. I learned HTML/CSS/Bootstrap over a short period of time and used CodePen, a free online showcaser for HTML/CSS, to design the desired pages. I also explored the creativity and user-friendly aspects of web pages as I communicated with the back end team to create the various functions of the web pages. </p>
+        
+        <center><a href="fitfriends/frontpage.html">
+        <div class="imgContainer"><img src="img/hackuci.png", class="projectImages"><div class="seeCode">View Site</div></div></a></center>
+        <center><h3>MapQuest</h3></center>
+        <p class="paragraphstyle">My mapquest project uses mapquest's open api to create a GPS. It is written within three python modules and implements the urllib and json libraries to access the mapquest api for python usage. When 'mapquest_output.py' is run, the user is prompted to enter a starting and ending address. With valid inputs, the program will display directions to the destination as well as other characteristics related to the journey.</p>
+        
+        <center><a href="https://github.com/AngeloZhu/mapquestGPS"><div class="imgContainer"><img src="img/mapquest.jpg" class="projectImages">
+        <div class="seeCode">See Code</div>
+            </div></a></center>
+             
+        <h2>High School Programming</h2>
+        <p class="paragraphstyle">My first programming experiences were in high school. Both of the projects below are written in Snap, a beginner friendly programming language made by UC Berkeley. Snap itself is written in JavaScript and consists of many "blocks" of code with prewritten functions that allow young programmers to learn basic programming logic. On the left, I made a computer version of the battleship board game. On the right is a card matching game where a player clicks on cards to try to pair up the images. These projects introduced me to simple coding functions and taught me to build abstractions for easier and more organized code. </p>
+        
+        <iframe src="https://snap.berkeley.edu/snapsource/snap.html#present:Username=angelozhu&ProjectName=Battleship"></iframe>
+        <iframe src="https://snap.berkeley.edu/snapsource/snap.html#present:Username=angelozhu&ProjectName=Matching%20Game"></iframe>
+        <script>
+        
+        slideshow();
+        var index = 0;
+        var images = document.getElementsByClassName('gif');
+        
+        function slideshow() {
+            
+            setInterval(function() {
+                images[index].style.display = "none";
+                index++;
+                if (index >= images.length) {index = 0;}
+                images[index].style.display = "block";
+                }, 1000)
+            }
+            
+        </script>
+        
+    </body>
+</html>

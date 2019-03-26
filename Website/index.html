@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sanchez' rel ='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+            
+        <title>Angelo Zhu</title>
+        <h1><center>Angelo Zhu</center></h1>
+       
+        <!--Menu-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+             <li><a href="home_missions.html">Home Missions 2018</a></li> 
+            <li><a href="uci_cs.html">UCI Computer Science</a></li>
+            <li style="right: 0%; position: absolute;">angelozhu15@gmail.com</li>
+        </ul>
+        <div class="parallax", style="height:350vh;">
+            
+            <div> 
+                <div class="slideshow" style="display: block;"><img src="img/fam.jpg"></div>
+                <div class="slideshow"><img src="img/baptism.jpg"></div>
+                <div class="slideshow"><img src="img/tanline.jpg"></div><div class="slideshow"><img src="img/clubvolleyball.jpg"></div>
+            </div> 
+            
+                <center><img src="img/membership_selfie.jpg", style="border-radius: 50%; margin-top:120vh;">
+                </center>   
+            
+                <h2><center>About Me</center></h2>
+            
+            <div class="char">
+                
+                <button><img src="img/bible.jpg" class="attr" style="left: 8vw;" id ="bibleId" onClick="reset('bibleId')"></button>
+
+                <button><img src="img/uci.png" class="attr" style="left: 31vw;" id ="uciId" onClick="reset('uciId')"></button>
+                
+                <button><img src="img/volleyball.jpg" class="attr" style="left: 54vw;" id ="volleyballId" onClick="reset('volleyballId')"></button>
+
+                <button><img src="img/boba.jpg" class="attr" style="left: 77vw;"id ="bobaId" onClick="reset('bobaId')"></button>
+            
+            </div>
+            
+            <div class="charText"> 
+            <p id="bibleIdText">I have been going to church since 2013 and accepted Christ in 2016. As a Christian, I invest personal time in praying, reading the Bible, and attending church-related events. My faith is implemented into all aspects of my life. Whether it be working hard in school or finding ways to serve others, I hope to be a living testimony about Jesus Christ. My chief goal as a believer is to pursue excellence in speech, conduct, love, faith, and purity an act of worship to God and that he may be glorified in my life.</p>
+            <p id="uciIdText">I am an undergraduate pursuing a Computer Science major at UC Irvine, C/O 2021. I initiatly chose CS as my major after learning Java in high school where I realized that CS was a perfect avenue for me to express my passion for creativity, critical thinking, and innovation. As a CS major I have much flexibility in narrowing down a specialization to fit my interests, but as of now I look forward to exploring the many intricate and enjoyable fields in to CS.</p>
+            <p id="volleyballIdText">One of my favorite hobbies is playing volleyball. I invested much time and energy in volleyball throughout my high school years which taught me physical and mental discipline and eventually helped me develop leadership skills. Today, rather than seeking the competitive aspect of volleyball, I use this sport for recreational, fellowship, and evangelism purposes. </p>      
+            <p id="bobaIdText">Boba milk tea is by far my favorite dessert/refreshment. I do not pass a week without having one boba drink because it is so easily accessible and delicious. Though I love many boba drinks, my go-to favorite drink is Jasmine milk tea. I have become so familiar with boba drinks that I can often tell flavor a drink is just by looking at it. My favorite boba place is DingTea which is located in Southern California. </p>
+            </div>
+            
+ 
+
+        <script>
+        
+        <!-- Slideshow -->
+            
+        fade();
+        var index = 0;
+        var images = document.getElementsByClassName('slideshow');
+        
+        function fade() {
+            setInterval(function() {
+                $(images[index]).fadeOut(500);
+                index++;
+                if (index >= images.length) {index = 0;}
+                $(images[index]).fadeIn(500);
+                $(images[index]).delay(1000);
+                }, 2000)
+            }
+            
+            function clickDisplay(imageId) {
+                var id = document.getElementById(imageId);
+                if (id.style.display === "block") {
+                    id.style.display = "none";
+                }
+                else {
+                    id.style.display = "block";
+                }
+            }
+            
+            function growShrink(imageId){
+                var id = document.getElementById(imageId);
+                if  (id.style.height === "18vw")  {
+                    id.style.boxShadow = "none";
+                    id.style.height = "15vw";
+                    id.style.width = "15vw";
+                    id.style.left = "var(--" + imageId + ")"; 
+                    id.style.marginTop = "1.5vw";
+                    
+                }
+                else {
+                    id.style.boxShadow = "5px 5px 50px white";
+                    id.style.height = "18vw";
+                    id.style.width = "18vw";
+                    id.style.left = "calc(var(--" + imageId + ") - 1.5vw)";
+                    id.style.marginTop = "0vw";
+                    
+                }
+            }
+                
+            function reset(imageId) {
+               var idList = ['bibleId', 'uciId', 'volleyballId', 'bobaId'];
+                var i;
+                for (i = 0; i < idList.length; i++){
+                    if (document.getElementById(idList[i]).style.height === "18vw" && idList[i] !== imageId) {
+                    this.growShrink(idList[i]);
+                    this.clickDisplay(idList[i] + "Text");
+                        }
+                    }
+                this.growShrink(imageId);
+                this.clickDisplay(imageId + "Text");
+            } 
+        </script>
+    </body>
+    
+
+</html>
